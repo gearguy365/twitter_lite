@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>codebird</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+
+	  <!--Main container for everything in navbar-->
+	  <div class="container">
+
+	  	<!--Expand button in small window-->
+	  	<button class = "navbar-toggle" data-target = ".navbar-responsive-collapse" data-toggle = "collapse" type = "button">
+	  		<span class = "icon-bar"></span>
+	  		<span class = "icon-bar"></span>
+	  		<span class = "icon-bar"></span>
+	  	</button>
+
+	  	<!--Logo position-->
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.php">Twitter-Lite</a>
+	      <ul class="nav navbar-nav pull-right">
+	        <li>
+	          <a href="#"><span class="glyphicon glyphicon-refresh" aria-hidden="true" id="refresh"></span></a>
+	        </li>
+	      </ul>
+	    </div><!--Logo position ends-->
+
+	    <!--Collapseable menu items-->
+	    <div class = "collapse navbar-collapse navbar-responsive-collapse">
+
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="search.html">Search</a></li>
+	        <li><a href="logout.php">LogOut</a></li>
+	      </ul>
+
+	    </div><!--Collapseable menu items ends-->
+
+	  </div><!--Main container ends-->
+
+	</div>
+	
+	<div class="container" id="newsfeed">
+		<div class="notification-bar">Please Wait...</div>
+		
+		<div class="well">
+			
+				<div class="form-group">
+					<label for="tweet">Tweet</label>
+					<textarea class="form-control" rows="5" cols="4" id="tweet"></textarea>
+				</div>
+				<br>
+				<div class="form-inline">
+					<button type="button" class="btn btn-primary" id="tweet-submit">Tweeet</button>
+					<label><p class="text-danger" id="warning">140 words limit exceeded</p></label>
+				</div>
+				
+		</div>
+		<strong id="loading">Tweets Loading, please wait...</strong>
+		<ul id="feeds">
+		</ul>
+	</div>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="popup-title">Modal Header</h4>
+            </div>
+            <div class="modal-body" id="popup-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+	
+	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+	<script src="js/script_1.js"></script>
+
+</body>
+
+</html>

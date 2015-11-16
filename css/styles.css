@@ -1,0 +1,54 @@
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; 
+}
+li {
+  margin: 0px;
+  padding: 0px;
+}
+.loading {
+  display: none;
+}
+#main-container{
+  margin-top: 60px;
+}
+#newsfeed {
+  margin-top: 60px;
+}
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; 
+}
+li {
+  margin: 0px;
+  padding: 0px;
+}
+.news:hover { 
+  background-color:#f2f2f2; 
+}
+
+.glyphicon {
+  font-size: 20px;
+}
+.notification-bar {
+  z-index: 200;
+  position: fixed;
+  margin-top: 50px;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#warning {
+  display: none;
+}
+.tweet {
+  margin-bottom: 5px;
+}
